@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<style>
+    
+    .box{
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background:linear-gradient(to top left, #33ccff 4%, #ff99cc 100%);
+         position: absolute;
+         top: 30%;
+         left:40%;
+    }
+    .boxa{
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background:linear-gradient(to top left, #33ccff 4%, #ff99cc 100%);
+         position: fixed;
+         top: 80px;
+         left: 20px;
+        
+    }
+    .boxb{
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background:linear-gradient(to top left, #33ccff 4%, #ff99cc 100%);
+         position: fixed;
+         bottom: 80px;
+         left: 20px;
+        
+    }
+    .boxc{
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background:linear-gradient(to top left, #33ccff 4%, #ff99cc 100%);
+         position: fixed;
+         top: 80px;
+         right:20px;
+        
+    }
+    .boxd{
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background:linear-gradient(to top left, #33ccff 4%, #ff99cc 100%);
+         position: fixed;
+         bottom: 80px;
+         right: 20px;
+        @media screen  and (max-width:700px){
+            .box{
+                top:38%;
+            }
+        
+    }
+    body{
+background-image:url('https://img.freepik.com/free-vector/gradient-geometric-shapes-dark-background-design_23-2148433740.jpg');
+ background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    
+    }
+    
+    
+    </style>
+   <script>
+    function ab(){
+        a=document.getElementById("n1").value;;
+        b=document.getElementById("n2").value
+        c=parseInt(a)+parseInt(b);
+        d=parseInt(a)-parseInt(b);
+        e=parseInt(a)/parseInt(b);
+        f=parseInt(a)*parseInt(b);
+        document.getElementById("box1").innerHTML="sum:" +a+" + "+b+"="+c;
+         document.getElementById("box2").innerHTML="subtract:"+a+" - "+b+"="+d;
+         document.getElementById("box4").innerHTML="multiply:"+a+" / "+b+"="+e;
+         document.getElementById("box5").innerHTML="divide:"+a+" * "+b+"="+f;
+        
+    }
+        
+    </script>
+    </head>
+    <body>
+    
+        <div class="boxa" id="box1">sum</div>
+    
+        <div class="boxb" id="box2">subtract</div>
+        <div class="box" id="box3">
+            <input class="input1" type="text" id="n1" placeholder="1st no"><br><br>
+            <input class="input2" type="text" id="n2" placeholder="2nd no"><br><br>
+            <button class="btn " onclick="ab()">click here</button>
+        </div>
+        <div class="boxc" id="box4">divide</div>
+        <div class="boxd" id="box5">multiply</div>
+        
+    </body>
+    
+    
+</html>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+</html>
